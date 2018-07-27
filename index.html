@@ -158,7 +158,7 @@
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn modal-close light-blue darken-2 right">Close</button>
+                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn modal-close light-blue darken-2 right">Close</button>
+                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn modal-close light-blue darken-2 right">Close</button>
+                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
                 </div>
               </div>
             </div>
@@ -251,7 +251,7 @@
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn modal-close light-blue darken-2 right">Close</button>
+                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@
         <div class="col s12 m6 l4">
           <div class="card">
             <div class="card-image">
-              <img src="img/Gallery/GreatWall.jpg" height=200px alt="">
+              <img class="materialboxed" src="img/Gallery/GreatWall.jpg" height=200px alt="">
               <span class="card-title">China</span>
             </div>
           </div>
@@ -277,7 +277,7 @@
         <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-image">
-                <img src="img/Gallery/Cruise.JPG" height=200px alt="">
+                <img class="materialboxed" src="img/Gallery/Cruise.JPG" height=200px alt="">
                 <span class="card-title">Dolphin Swims in Mexico</span>
               </div>
             </div>
@@ -285,7 +285,7 @@
         <div class="col s12 m6 l4">
           <div class="card">
             <div class="card-image">
-              <img src="img/Gallery/Cancun.jpg" height=200px alt="">
+              <img class="materialboxed" src="img/Gallery/Cancun.jpg" height=200px alt="">
               <span class="card-title">Cancun, Mexico</span>
             </div>
           </div>
@@ -293,7 +293,7 @@
         <div class="col s12 m6 l4">
           <div class="card">
             <div class="card-image">
-              <img height=200px src="img/Gallery/EiffelTower.jpg" alt="">
+              <img class="materialboxed" height=200px src="img/Gallery/EiffelTower.jpg" alt="">
               <span class="card-title">Paris, France</span>
             </div>
           </div>
@@ -301,7 +301,7 @@
         <div class="col s12 m6 l4">
           <div class="card">
             <div class="card-image">
-              <img height=200px src="img/Gallery/RivieraMaya.JPG" alt="">
+              <img class="materialboxed" height=200px src="img/Gallery/RivieraMaya.JPG" alt="">
               <span class="card-title">Riviera Maya</span>
             </div>
           </div>
@@ -309,7 +309,7 @@
         <div class="col s12 m6 l4">
             <div class="card">
               <div class="card-image">
-                <img height=200px src="img/Gallery/StLucia.jpg" alt="">
+                <img class="materialboxed" height=200px src="img/Gallery/StLucia.jpg" alt="">
                 <span class="card-title">St. Lucia</span>
               </div>
             </div>
@@ -413,6 +413,8 @@
       var collapsibleInstances = M.Collapsible.init(collapsibleElems, {});
       var modalElems = document.querySelectorAll('.modal');
       var modalInstances = M.Modal.init(modalElems, {});
+      var materialBoxElems = document.querySelectorAll('.materialboxed');
+      var materialBoxInstances = M.Materialbox.init(materialBoxElems, {});
     });
   </script>
 </body>
