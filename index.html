@@ -1,139 +1,211 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Things Travel</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Things Travel</title>
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-</head>
+  <body id="home" class="scrollspy">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=167186697025029"
+      nonce="taHpwny4"
+    ></script>
 
-<body id="home" class="scrollspy">
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=167186697025029" nonce="taHpwny4"></script>
-
-  <!-- Navbar -->
-  <div class="navbar-fixed">
-    <nav class="light-blue darken-2">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a class="flow-text" href="#">All Things Travel</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#philosophy">Our Philosophy</a>
-            </li>
-            <li>
-              <a href="#team">Our Team</a>
-            </li>
-            <li>
-              <a href="#places">Our Favorite Places</a>
-            </li>
-            <li>
-              <a href="#resources">Travel Resources</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <a href="#fb-posts">Posts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <ul class="sidenav" id="mobile-nav">
-    <li>
-      <a href="#home">Home</a>
-    </li>
-    <li>
-      <a href="#philosophy">Our Philosophy</a>
-    </li>
-    <li>
-      <a href="#team">Our Team</a>
-    </li>
-    <li>
-      <a href="#places">Our Favorite Places</a>
-    </li>
-    <li>
-      <a href="#resources">Travel Resources</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-
-  <!-- Section: Logo -->
-  <section class="slider">
-    <ul class="slides">
+    <ul id="dropdown1" class="dropdown-content">
       <li>
-        <img src="img/Beach.jpg">
-        
-        <!-- random image -->
-        <div class="caption center-align">
-          <img style="width: 200px; height: 200px" src="img/trademarkedLogo.jpg">
-          <h4 class="light white-text text-lighten-3"><i>We have a passion for all things travel.</i></h4>
-        </div>
+        <a href="https://www.sandals.com/?referral=147912" target="_blank"
+          >Sandals</a
+        >
+      </li>
+      <li>
+        <a href="https://www.beaches.com/?referral=147912" target="_blank"
+          >Beaches</a
+        >
       </li>
     </ul>
-  </section>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="light-blue darken-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">All Things Travel</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#philosophy">Our Philosophy</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#places">Our Favorite Places</a></li>
+              <!-- Dropdown Trigger -->
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Our Partners<i class="material-icons right"
+                    >arrow_drop_down</i
+                  ></a
+                >
+              </li>
+              <li><a href="#resources">Travel Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#fb-posts">Posts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#philosophy">Our Philosophy</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#places">Our Favorite Places</a></li>
+      <li><a href="#resources">Travel Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#fb-posts">Posts</a></li>
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"
+              >Our Partners<i class="material-icons right"
+                >arrow_drop_down</i
+              ></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.sandals.com/?referral=147912"
+                    target="_blank"
+                    >Sandals</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.beaches.com/?referral=147912"
+                    target="_blank"
+                    >Beaches</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
 
-  <!-- Section: Philosophy -->
-  <section id="philosophy" class="section section-philosophy grey lighten-4 center scrollspy">
-    <div class="container">
-      <h4 class="center">
-        <span class="light-blue-text darken-2">Our</span> Philosophy
-      </h4>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card-panel hoverable">
-            <i class="material-icons large light-blue-text darken-2">room</i>
-            <h4>Let's Go!</h4>
-            <p>There are so many vacation options. We are here to help! At All Things Travel we will be with you every step of the way. Your vacation is something precious and important to you and we want you to have the best experience possible.</p>
+    <!-- Section: Logo -->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/Beach.jpg" />
+
+          <!-- random image -->
+          <div class="caption center-align">
+            <img
+              style="width: 200px; height: 200px"
+              src="img/trademarkedLogo.jpg"
+            />
+            <h4 class="light white-text text-lighten-3">
+              <i>We have a passion for all things travel.</i>
+            </h4>
           </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card-panel hoverable">
-            <i class="material-icons large light-blue-text darken-2">store</i>
-            <h4>Plan Stress Free</h4>
-            <p>Our goal is to make your vacation stress free and seamless as we provide you with excellent customer service. We are here to listen to your needs and wants as we make your dreams come true. Your input is vital to making this process smooth.</p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card-panel hoverable">
-            <i class="material-icons large light-blue-text darken-2">people</i>
-            <h4>Trust Us</h4>
-            <p>With our combined 36 years of experience in the travel industry, you can put your trust and faith in our abilities to find you the best price possible. We will do the research so you don't have to!</p>
-          </div>
-        </div>
-        <div class="col s12 m6">
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section: Philosophy -->
+    <section
+      id="philosophy"
+      class="section section-philosophy grey lighten-4 center scrollspy"
+    >
+      <div class="container">
+        <h4 class="center">
+          <span class="light-blue-text darken-2">Our</span> Philosophy
+        </h4>
+        <div class="row">
+          <div class="col s12 m6">
             <div class="card-panel hoverable">
-              <i class="material-icons large light-blue-text darken-2">lock_outline</i>
-              <h4>Travel Insurance</h4>
-              <p>Purchase travel insurance for peace of mind. Get a refund on your trip if you cancel for a covered reason. Also helps with lost/delayed luggage and provides medical coverage. Ask an agent for full details.</p>
+              <i class="material-icons large light-blue-text darken-2">room</i>
+              <h4>Let's Go!</h4>
+              <p>
+                There are so many vacation options. We are here to help! At All
+                Things Travel we will be with you every step of the way. Your
+                vacation is something precious and important to you and we want
+                you to have the best experience possible.
+              </p>
             </div>
           </div>
+          <div class="col s12 m6">
+            <div class="card-panel hoverable">
+              <i class="material-icons large light-blue-text darken-2">store</i>
+              <h4>Plan Stress Free</h4>
+              <p>
+                Our goal is to make your vacation stress free and seamless as we
+                provide you with excellent customer service. We are here to
+                listen to your needs and wants as we make your dreams come true.
+                Your input is vital to making this process smooth.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel hoverable">
+              <i class="material-icons large light-blue-text darken-2"
+                >people</i
+              >
+              <h4>Trust Us</h4>
+              <p>
+                With our combined 36 years of experience in the travel industry,
+                you can put your trust and faith in our abilities to find you
+                the best price possible. We will do the research so you don't
+                have to!
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel hoverable">
+              <i class="material-icons large light-blue-text darken-2"
+                >lock_outline</i
+              >
+              <h4>Travel Insurance</h4>
+              <p>
+                Purchase travel insurance for peace of mind. Get a refund on
+                your trip if you cancel for a covered reason. Also helps with
+                lost/delayed luggage and provides medical coverage. Ask an agent
+                for full details.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section: Team -->
-  <section id="team" class="section section-team scrollspy">
-    <div class="container">
+    <!-- Section: Team -->
+    <section id="team" class="section section-team scrollspy">
+      <div class="container">
         <h4 class="center">
           <span class="light-blue-text darken-2">Our</span> Team
         </h4>
@@ -141,24 +213,70 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Alice_250.jpg" class="circle responsive-img" alt="Alice Johnson">
+                <img
+                  src="img/Team/Alice_250.jpg"
+                  class="circle responsive-img"
+                  alt="Alice Johnson"
+                />
               </div>
               <h4>Alice Johnson</h4>
               <p>
-                Alice has been in the travel business for more than 15 years, with certifications for numerous countries, cruise lines, and resorts under her belt. She is excited to have the opportunity to open her own travel agency. Besides travel, Alice enjoys spending time with family and watching sports. She is married to Kenny and has three boys-Matthew (married to Rebecca), Joshua, and Andrew.
+                Alice has been in the travel business for more than 15 years,
+                with certifications for numerous countries, cruise lines, and
+                resorts under her belt. She is excited to have the opportunity
+                to open her own travel agency. Besides travel, Alice enjoys
+                spending time with family and watching sports. She is married to
+                Kenny and has three boys-Matthew (married to Rebecca), Joshua,
+                and Andrew.
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#alice-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#alice-bio"
+                >More Information</a
+              >
               <!-- Alice Modal -->
               <div id="alice-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Alice Johnson</h4>
-                  <p>Alice has been in the travel business for more than 15 years, with certifications for numerous countries, cruise lines, and resorts under her belt. She is excited to have the opportunity to open her own travel agency. Besides travel, Alice enjoys spending time with family and watching sports. She is married to Kenny and has three boys-Matthew (married to Rebecca), Joshua, and Andrew.</p>
-                  <p>Alice has traveled to many places including Mexico, St. Lucia, Dominican Republic, Barbados, Jamaica, Turks and Caicos, Costa Rica, Bahamas, Antigua, Grenada, England and France. Additionally, she has traveled to many places in the US including Hawaii, New York, California, Texas, Florida and several National Parks.  She will be traveling on a river cruise this summer and Ireland this fall and is looking forward to visiting these new destinations!</p>
-                  <p>Whether it is an all-inclusive honeymoon or anniversary trip, weekend getaway or cruise, Alice enjoys planning ALL types of travel. She specializes in school trips for choirs and bands and has worked with area schools such as Evangelical Christian School, Bartlett High School and Tipton Rosemark Academy.</p>
-                  <p>Her certifications include: AM Resorts Master Agent, Marriott Hotel Specialist, Certified Sandals Specialist, Graduate of Disney’s College of Knowledge</p></p>
+                  <p>
+                    Alice has been in the travel business for more than 15
+                    years, with certifications for numerous countries, cruise
+                    lines, and resorts under her belt. She is excited to have
+                    the opportunity to open her own travel agency. Besides
+                    travel, Alice enjoys spending time with family and watching
+                    sports. She is married to Kenny and has three boys-Matthew
+                    (married to Rebecca), Joshua, and Andrew.
+                  </p>
+                  <p>
+                    Alice has traveled to many places including Mexico, St.
+                    Lucia, Dominican Republic, Barbados, Jamaica, Turks and
+                    Caicos, Costa Rica, Bahamas, Antigua, Grenada, England and
+                    France. Additionally, she has traveled to many places in the
+                    US including Hawaii, New York, California, Texas, Florida
+                    and several National Parks. She will be traveling on a river
+                    cruise this summer and Ireland this fall and is looking
+                    forward to visiting these new destinations!
+                  </p>
+                  <p>
+                    Whether it is an all-inclusive honeymoon or anniversary
+                    trip, weekend getaway or cruise, Alice enjoys planning ALL
+                    types of travel. She specializes in school trips for choirs
+                    and bands and has worked with area schools such as
+                    Evangelical Christian School, Bartlett High School and
+                    Tipton Rosemark Academy.
+                  </p>
+                  <p>
+                    Her certifications include: AM Resorts Master Agent,
+                    Marriott Hotel Specialist, Certified Sandals Specialist,
+                    Graduate of Disney’s College of Knowledge
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -166,36 +284,88 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Sandra_250.jpg" class="circle responsive-img" alt="Sandra Owings Picture">
+                <img
+                  src="img/Team/Sandra_250.jpg"
+                  class="circle responsive-img"
+                  alt="Sandra Owings Picture"
+                />
               </div>
               <h4>Sandra Owings</h4>
               <p>
-                Sandra has enjoyed travel all her life. Her interests were sparked by stories, photos and souvenirs from family who traveled the world. With over 30 years in the industry she has been blessed with the friendship of extraordinary people, remarkable experiences and a continued passion for all things travel.
-                <span style="visibility:hidden">Maecenas placerat sapien sed faucibus ornare.</span>
+                Sandra has enjoyed travel all her life. Her interests were
+                sparked by stories, photos and souvenirs from family who
+                traveled the world. With over 30 years in the industry she has
+                been blessed with the friendship of extraordinary people,
+                remarkable experiences and a continued passion for all things
+                travel.
+                <span style="visibility: hidden"
+                  >Maecenas placerat sapien sed faucibus ornare.</span
+                >
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#sandra-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#sandra-bio"
+                >More Information</a
+              >
               <!-- Sandra Modal -->
               <div id="sandra-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Sandra Owings</h4>
-                    <p>
-                      Sandra has enjoyed travel all her life. Her interests were sparked by stories, photos and souvenirs from family who traveled the world. With over 30 years in the industry she has been blessed with the friendship of extraordinary people, remarkable experiences and a continued passion for all things travel.
-                    </p>
-                    <p>
-                      Starting out with a degree in Travel and Tourism she has worked as a hotel clerk, an airline reservations manager, and for many years now travel advisor and agency manger
-                    </p>
-                    <p>
-                      Travels include a Trans-Atlantic voyage with visits to Italy, Spain and Bermuda; to Seattle and Vancouver, Victoria and Alaska. Trips along the East Coast, skiing in the West, and to street festivals in New Orleans, Destin and the Southern states. Costa Rica and Hawaii were highlights as well as both Mexican coasts, Jamaica and The Dominican Republic. In her free time Sandra enjoys spending time with her husband Chris, son Jason and wife Katie, and her extended family. With a love for cruises, all-inclusive Caribbean resorts and outdoor activities such as fishing, photography and playing with her dog she is always looking forward to her next trip.
-                    </p>
-                    <p>
-                      She is able to assist with your individual and group travel of all types, destination weddings and honeymoons, reunions, corporate incentive travel, romantic trips and meaningful voluntourism experiences. Whether you are looking for wildlife sightings, cultural insights, culinary lessons and wine tastings, luxury or moderate travel, or perhaps a once-in-a lifetime experience she can assist with your travel planning needs. Sandra can assist in finding your tour guide, cruise director, resort and butler staff, private yacht or jet.
-                    </p>
-                    <p>
-                      Her certifications include: "A-List" of Top Travel Professionals by Travel + Leisure Magazine, certified Master Cruise Counselor, Authorized Disney Specialist, a Ski Specialist, Australia Certified Specialist and Certified Sandals & Beaches Resort Specialist. Sandra also holds accreditation with many islands in the Caribbean, resorts and tourist boards both in the U.S. and abroad.
-                    </p>
+                  <p>
+                    Sandra has enjoyed travel all her life. Her interests were
+                    sparked by stories, photos and souvenirs from family who
+                    traveled the world. With over 30 years in the industry she
+                    has been blessed with the friendship of extraordinary
+                    people, remarkable experiences and a continued passion for
+                    all things travel.
+                  </p>
+                  <p>
+                    Starting out with a degree in Travel and Tourism she has
+                    worked as a hotel clerk, an airline reservations manager,
+                    and for many years now travel advisor and agency manger
+                  </p>
+                  <p>
+                    Travels include a Trans-Atlantic voyage with visits to
+                    Italy, Spain and Bermuda; to Seattle and Vancouver, Victoria
+                    and Alaska. Trips along the East Coast, skiing in the West,
+                    and to street festivals in New Orleans, Destin and the
+                    Southern states. Costa Rica and Hawaii were highlights as
+                    well as both Mexican coasts, Jamaica and The Dominican
+                    Republic. In her free time Sandra enjoys spending time with
+                    her husband Chris, son Jason and wife Katie, and her
+                    extended family. With a love for cruises, all-inclusive
+                    Caribbean resorts and outdoor activities such as fishing,
+                    photography and playing with her dog she is always looking
+                    forward to her next trip.
+                  </p>
+                  <p>
+                    She is able to assist with your individual and group travel
+                    of all types, destination weddings and honeymoons, reunions,
+                    corporate incentive travel, romantic trips and meaningful
+                    voluntourism experiences. Whether you are looking for
+                    wildlife sightings, cultural insights, culinary lessons and
+                    wine tastings, luxury or moderate travel, or perhaps a
+                    once-in-a lifetime experience she can assist with your
+                    travel planning needs. Sandra can assist in finding your
+                    tour guide, cruise director, resort and butler staff,
+                    private yacht or jet.
+                  </p>
+                  <p>
+                    Her certifications include: "A-List" of Top Travel
+                    Professionals by Travel + Leisure Magazine, certified Master
+                    Cruise Counselor, Authorized Disney Specialist, a Ski
+                    Specialist, Australia Certified Specialist and Certified
+                    Sandals & Beaches Resort Specialist. Sandra also holds
+                    accreditation with many islands in the Caribbean, resorts
+                    and tourist boards both in the U.S. and abroad.
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -203,32 +373,67 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Lisa_New_250.jpg" class="circle responsive-img" alt="Lisa Van Hersh Picture">
+                <img
+                  src="img/Team/Lisa_New_250.jpg"
+                  class="circle responsive-img"
+                  alt="Lisa Van Hersh Picture"
+                />
               </div>
               <h4>Lisa Van Hersh</h4>
               <p>
-                Lisa has always had an interest in travel ever since she was a child. With her great organizational skills and thoroughness, she can make your travel experience seamless and worry free.  Lisa enjoys spending time with her family that includes husband Tom, daughter Rachel, son-in-law Paul, son Andrew, daughter-in-law Lorraine and grandson Bennett.
+                Lisa has always had an interest in travel ever since she was a
+                child. With her great organizational skills and thoroughness,
+                she can make your travel experience seamless and worry free.
+                Lisa enjoys spending time with her family that includes husband
+                Tom, daughter Rachel, son-in-law Paul, son Andrew,
+                daughter-in-law Lorraine and grandson Bennett.
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#lisa-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#lisa-bio"
+                >More Information</a
+              >
               <!-- Lisa Modal -->
               <div id="lisa-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Lisa Van Hersh</h4>
                   <p>
-                    Lisa has always had an interest in travel ever since she was a child.  She can make your travel experience seamless and worry free. Lisa enjoys spending time with her family that includes husband Tom, daughter Rachel, son-in-law Paul, son Andrew, daughter-in-law Lorraine and grandchildren Bennett and Lizzie.
+                    Lisa has always had an interest in travel ever since she was
+                    a child. She can make your travel experience seamless and
+                    worry free. Lisa enjoys spending time with her family that
+                    includes husband Tom, daughter Rachel, son-in-law Paul, son
+                    Andrew, daughter-in-law Lorraine and grandchildren Bennett
+                    and Lizzie.
                   </p>
                   <p>
-                    Aside from traveling overseas, Lisa is also an avid cruiser. She has taken many cruises on many different cruise lines. Her cruises have taken her to the Mediterranean as well as islands in the Caribbean including the US Virgin Islands, Puerto Rico, the Dominican Republic, Barbados, Grenada, St. Maarten, Martinique, St. Lucia, The Cayman Islands, Jamaica, Mexico, Antigua, Aruba, Curacao, Guadeloupe and the island of Dominica.
+                    Aside from traveling overseas, Lisa is also an avid cruiser.
+                    She has taken many cruises on many different cruise lines.
+                    Her cruises have taken her to the Mediterranean as well as
+                    islands in the Caribbean including the US Virgin Islands,
+                    Puerto Rico, the Dominican Republic, Barbados, Grenada, St.
+                    Maarten, Martinique, St. Lucia, The Cayman Islands, Jamaica,
+                    Mexico, Antigua, Aruba, Curacao, Guadeloupe and the island
+                    of Dominica.
                   </p>
                   <p>
-                    She has been blessed with great organizational skills and the ability to be thorough. With these skills, no trip, be it from around the world cruises to weekend getaways to Nashville, St. Louis, or Atlanta, is too big or too small for her to handle.
+                    She has been blessed with great organizational skills and
+                    the ability to be thorough. With these skills, no trip, be
+                    it from around the world cruises to weekend getaways to
+                    Nashville, St. Louis, or Atlanta, is too big or too small
+                    for her to handle.
                   </p>
                   <p>
-                    Lisa's certifications include AM Resorts Master Agent, Certified Sandals Specialist, and Princess Cruise Lines Commodore Status Agent.
+                    Lisa's certifications include AM Resorts Master Agent,
+                    Certified Sandals Specialist, and Princess Cruise Lines
+                    Commodore Status Agent.
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -238,23 +443,47 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Lisa_Bucks_250.png" class="circle responsive-img" alt="Lisa Bucks Picture">
+                <img
+                  src="img/Team/Lisa_Bucks_250.png"
+                  class="circle responsive-img"
+                  alt="Lisa Bucks Picture"
+                />
               </div>
               <h4>Lisa Bucks</h4>
               <p>
-                Lisa has been traveling since she was a little girl.  Her father worked for the airlines and took the family on many traveling adventures which sparked a love in Lisa for new places, cultures, and experiences.
+                Lisa has been traveling since she was a little girl. Her father
+                worked for the airlines and took the family on many traveling
+                adventures which sparked a love in Lisa for new places,
+                cultures, and experiences.
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#lisa-bucks-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#lisa-bucks-bio"
+                >More Information</a
+              >
               <!-- Lisa Bucks Modal -->
               <div id="lisa-bucks-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Lisa Bucks</h4>
                   <p>
-                    Lisa has been traveling since she was a little girl.  Her father worked for the airlines and took the family on many traveling adventures which sparked a love in Lisa for new places, cultures, and experiences. She enjoys researching and planning vacations destinations and has joined the team at All Things Travel.  In addition to her passion for travel, Lisa loves to spend time with her husband, Horst, visiting her two college boys in Nashville and Knoxville and traveling to her hometown of Chicago to visit family and friends.
+                    Lisa has been traveling since she was a little girl. Her
+                    father worked for the airlines and took the family on many
+                    traveling adventures which sparked a love in Lisa for new
+                    places, cultures, and experiences. She enjoys researching
+                    and planning vacations destinations and has joined the team
+                    at All Things Travel. In addition to her passion for travel,
+                    Lisa loves to spend time with her husband, Horst, visiting
+                    her two college boys in Nashville and Knoxville and
+                    traveling to her hometown of Chicago to visit family and
+                    friends.
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -262,27 +491,59 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Kendra_White_250.jpg" class="circle responsive-img" alt="Kendra White Picture">
+                <img
+                  src="img/Team/Kendra_White_250.jpg"
+                  class="circle responsive-img"
+                  alt="Kendra White Picture"
+                />
               </div>
               <h4>Kendra White</h4>
               <p>
-                Hi! My name is Kendra and traveling has been my thing for years. I can help you plan your next adventure either to a city near you or an amazing tropical beach!  I would love to help you make your travel dreams come true.
-                <span style="visibility:hidden">Maecenas placerat sapien sed faucibus ornare.</span>
+                Hi! My name is Kendra and traveling has been my thing for years.
+                I can help you plan your next adventure either to a city near
+                you or an amazing tropical beach! I would love to help you make
+                your travel dreams come true.
+                <span style="visibility: hidden"
+                  >Maecenas placerat sapien sed faucibus ornare.</span
+                >
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#kendra-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#kendra-bio"
+                >More Information</a
+              >
               <!-- Kendra Modal -->
               <div id="kendra-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Kendra White</h4>
                   <p>
-                    Hi! My name is Kendra and traveling has been my thing for years. Moving from New York City to a small town east of Memphis definitely had its challenges but never stopped the traveling that was always done.  Each year I plan an international vacation for myself and what some would call a local vacation to explore this wonderful country we get to call home. Being a child of a Jamaican citizen has allowed me to take numerous vacation to various Caribbean islands with Jamaica being my second home. I can help you plan your next adventure either to a city near you or an amazing tropical beach!  I would love to help you make your travel dreams come true.
+                    Hi! My name is Kendra and traveling has been my thing for
+                    years. Moving from New York City to a small town east of
+                    Memphis definitely had its challenges but never stopped the
+                    traveling that was always done. Each year I plan an
+                    international vacation for myself and what some would call a
+                    local vacation to explore this wonderful country we get to
+                    call home. Being a child of a Jamaican citizen has allowed
+                    me to take numerous vacation to various Caribbean islands
+                    with Jamaica being my second home. I can help you plan your
+                    next adventure either to a city near you or an amazing
+                    tropical beach! I would love to help you make your travel
+                    dreams come true.
                   </p>
                   <p>
-                    I have always had a passion for details-when I was younger I always wondered why a particular person planned our trips.  Being able to be a part of ALL THINGS TRAVEL has allowed me to be the person planning those trips.  Allow me to help you and be that support to plan your next getaway.
+                    I have always had a passion for details-when I was younger I
+                    always wondered why a particular person planned our trips.
+                    Being able to be a part of ALL THINGS TRAVEL has allowed me
+                    to be the person planning those trips. Allow me to help you
+                    and be that support to plan your next getaway.
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -290,22 +551,50 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Kaitlin_250.jpg" class="circle responsive-img" alt="Katlin Picture">
+                <img
+                  src="img/Team/Kaitlin_250.jpg"
+                  class="circle responsive-img"
+                  alt="Katlin Picture"
+                />
               </div>
               <h4>Katlin Breithaupt</h4>
               <p>
-                Katlin has had a passion for travel all her life. She has been blessed to see countries like Italy, Ghana, the Dominican Republic and the Bahamas. Whether it’s a trip domestically or internationally, she would be honored to plan the details and let you enjoy your next adventure!
+                Katlin has had a passion for travel all her life. She has been
+                blessed to see countries like Italy, Ghana, the Dominican
+                Republic and the Bahamas. Whether it’s a trip domestically or
+                internationally, she would be honored to plan the details and
+                let you enjoy your next adventure!
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#katlin-reithaupt-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#katlin-reithaupt-bio"
+                >More Information</a
+              >
               <!-- Kaitlin Modal -->
               <div id="katlin-reithaupt-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Katlin Breithaupt</h4>
                   <p>
-                    Katlin has had a passion for travel all her life. She has been blessed to see countries like Italy, Ghana, the Dominican Republic and the Bahamas. She has a deep appreciation for the various languages, cultures, foods, experiences and people you meet while traveling. Katlin is looking forward to traveling to Serbia, Greece and the western United States. When she isn’t working she loves spending time with friends, family, her husband Ben and their sweet puppy Sadie Mae. Whether it’s a trip domestically or internationally, she would be honored to plan the details and let you enjoy your next adventure!
+                    Katlin has had a passion for travel all her life. She has
+                    been blessed to see countries like Italy, Ghana, the
+                    Dominican Republic and the Bahamas. She has a deep
+                    appreciation for the various languages, cultures, foods,
+                    experiences and people you meet while traveling. Katlin is
+                    looking forward to traveling to Serbia, Greece and the
+                    western United States. When she isn’t working she loves
+                    spending time with friends, family, her husband Ben and
+                    their sweet puppy Sadie Mae. Whether it’s a trip
+                    domestically or internationally, she would be honored to
+                    plan the details and let you enjoy your next adventure!
+                  </p>
                 </div>
+
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -315,24 +604,57 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Marion_250.jpg" class="circle responsive-img" alt="Marion Picture">
+                <img
+                  src="img/Team/Marion_250.jpg"
+                  class="circle responsive-img"
+                  alt="Marion Picture"
+                />
               </div>
               <h4>Marion Covington</h4>
               <p>
-                Marion was born and raised in France, near Normandy (right on the coast)! Traveling is a regular part of Marion's life, with highlights including: England, Spain, Croatia and Greece. Marion has always had a passion for travel, culture and food and am excited to get to share it with you and help you plan your best adventure yet!
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                Marion was born and raised in France, near Normandy (right on
+                the coast)! Traveling is a regular part of Marion's life, with
+                highlights including: England, Spain, Croatia and Greece. Marion
+                has always had a passion for travel, culture and food and am
+                excited to get to share it with you and help you plan your best
+                adventure yet!
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#marion-covington-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#marion-covington-bio"
+                >More Information</a
+              >
               <!-- Marion Modal -->
               <div id="marion-covington-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Marion Covington</h4>
                   <p>
-                    Marion was born and raised in France, near Normandy (right on the coast)! She has made traveling a regular part of her life, with highlights including: England, Spain, Croatia and Greece. Her latest experience started back in 2018 when she moved to the United States and has been ever since! She have since visited 25 States with the goal to visit them all. Marion has always had a passion for travel, culture and food and am excited to get to share it with you and help you plan your best adventure yet!
+                    Marion was born and raised in France, near Normandy (right
+                    on the coast)! She has made traveling a regular part of her
+                    life, with highlights including: England, Spain, Croatia and
+                    Greece. Her latest experience started back in 2018 when she
+                    moved to the United States and has been ever since! She have
+                    since visited 25 States with the goal to visit them all.
+                    Marion has always had a passion for travel, culture and food
+                    and am excited to get to share it with you and help you plan
+                    your best adventure yet!
+                  </p>
                 </div>
+
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -340,27 +662,65 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Gretchen.png" class="circle responsive-img" alt="Gretchen Miller Picture">
+                <img
+                  src="img/Team/Gretchen.png"
+                  class="circle responsive-img"
+                  alt="Gretchen Miller Picture"
+                />
               </div>
               <h4>Gretchen Miller</h4>
               <p>
-                Gretchen has been planning trips for herself, family, and friends for years. Now that her nest is empty, she is embarking on a new adventure at All Things Travel. Gretchen's love of travel was solidified on a middle school trip to Western Europe. Not only is she a certified graduate of Disney's College of Knowledge for travel agents but also has over 20 combined visits to DisneyWorld and DisneyLand. 
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <span style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                Gretchen has been planning trips for herself, family, and
+                friends for years. Now that her nest is empty, she is embarking
+                on a new adventure at All Things Travel. Gretchen's love of
+                travel was solidified on a middle school trip to Western Europe.
+                Not only is she a certified graduate of Disney's College of
+                Knowledge for travel agents but also has over 20 combined visits
+                to DisneyWorld and DisneyLand.
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
+                <span style="visibility: hidden"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#gretchen-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#gretchen-bio"
+                >More Information</a
+              >
               <!-- Gretchen Modal -->
               <div id="gretchen-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Gretchen Miller</h4>
                   <p>
-                    Gretchen has been planning trips for herself, family, and friends for years. Now that her nest is empty, she is embarking on a new adventure at All Things Travel. Gretchen's love of travel was solidified on a middle school trip to Western Europe. Not only is she a certified graduate of Disney's College of Knowledge for travel agents but also has over 20 combined visits to DisneyWorld and DisneyLand. She would love to plan your Disney trip so you can simply "enjoy the ride"!
+                    Gretchen has been planning trips for herself, family, and
+                    friends for years. Now that her nest is empty, she is
+                    embarking on a new adventure at All Things Travel.
+                    Gretchen's love of travel was solidified on a middle school
+                    trip to Western Europe. Not only is she a certified graduate
+                    of Disney's College of Knowledge for travel agents but also
+                    has over 20 combined visits to DisneyWorld and DisneyLand.
+                    She would love to plan your Disney trip so you can simply
+                    "enjoy the ride"!
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
@@ -368,227 +728,393 @@
           <div class="col s12 l4">
             <div class="card-panel hoverable">
               <div class="center-align">
-                <img src="img/Team/Amy_Cooper_250.png" class="circle responsive-img" alt="Amy Cooper Picture">
+                <img
+                  src="img/Team/Amy_Cooper_250.png"
+                  class="circle responsive-img"
+                  alt="Amy Cooper Picture"
+                />
               </div>
               <h4>Amy Cooper</h4>
               <p>
-                Amy has a HUGE passion for travel. She truly enjoys the process of planning every little detail of each trip. She has had the chance to visit some amazing places throughout the United States (including Hawaii), Spain, Italy, Mexico, multiple Caribbean Islands, and South Africa. She loves to find new places, especially ones that are hidden jewels off the beaten path! She also loves food, wine, and experiencing other cultures.
+                Amy has a HUGE passion for travel. She truly enjoys the process
+                of planning every little detail of each trip. She has had the
+                chance to visit some amazing places throughout the United States
+                (including Hawaii), Spain, Italy, Mexico, multiple Caribbean
+                Islands, and South Africa. She loves to find new places,
+                especially ones that are hidden jewels off the beaten path! She
+                also loves food, wine, and experiencing other cultures.
               </p>
-              <a class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2" href="#amy-cooper-bio">More Information</a>
+              <a
+                class="waves-effect waves-light btn modal-trigger modal-close light-blue darken-2"
+                href="#amy-cooper-bio"
+                >More Information</a
+              >
               <!-- Amy Cooper Modal -->
               <div id="amy-cooper-bio" class="modal">
                 <div class="modal-content">
                   <h4>Extended Bio - Amy Cooper</h4>
                   <p>
-                    Everyone who has spent at least 1 hour with Amy knows that she has a HUGE passion for travel. She truly enjoys the process of planning every little detail of each trip. She has had the chance to visit some amazing places throughout the United States (including Hawaii), Spain, Italy, Mexico, multiple Caribbean Islands, and South Africa. God has blessed her with great organizational skills and the ability to be thorough. She loves to find new places, especially ones that are hidden jewels off the beaten path! She also loves food, wine, and experiencing other cultures. She enjoys incorporating these items in her travel planning. Her dream is to be able to use her knowledge and skills to plan amazing trips for others!
+                    Everyone who has spent at least 1 hour with Amy knows that
+                    she has a HUGE passion for travel. She truly enjoys the
+                    process of planning every little detail of each trip. She
+                    has had the chance to visit some amazing places throughout
+                    the United States (including Hawaii), Spain, Italy, Mexico,
+                    multiple Caribbean Islands, and South Africa. God has
+                    blessed her with great organizational skills and the ability
+                    to be thorough. She loves to find new places, especially
+                    ones that are hidden jewels off the beaten path! She also
+                    loves food, wine, and experiencing other cultures. She
+                    enjoys incorporating these items in her travel planning. Her
+                    dream is to be able to use her knowledge and skills to plan
+                    amazing trips for others!
                   </p>
                 </div>
                 <div class="modal-footer">
-                  <button class="waves-effect waves-light btn modal-close light-blue darken-2 right">Close</button>
+                  <button
+                    class="waves-effect waves-light btn modal-close light-blue darken-2 right"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>          
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Section: Popular Places -->
-  <section id="places" class="section section-popular-places grey lighten-4 scrollspy">
-    <div class="container">
-      <div class="row">
+    <!-- Section: Popular Places -->
+    <section
+      id="places"
+      class="section section-popular-places grey lighten-4 scrollspy"
+    >
+      <div class="container">
+        <div class="row">
+          <h4 class="center">
+            <span class="light-blue-text darken-2">Our</span> Favorite Places
+          </h4>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src="img/Gallery/Iceland.jpg"
+                  height="200px"
+                  alt=""
+                />
+                <span class="card-title">Iceland</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  height="200px"
+                  src="img/Gallery/Italy.jpeg"
+                  alt=""
+                />
+                <span class="card-title">Italy</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src="img/Gallery/Cancun.jpg"
+                  height="200px"
+                  alt=""
+                />
+                <span class="card-title">Cancun, Mexico</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  height="200px"
+                  src="img/Gallery/EiffelTower.jpg"
+                  alt=""
+                />
+                <span class="card-title">Paris, France</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src="img/Gallery/Sydney.jpg"
+                  height="200px"
+                  alt=""
+                />
+                <span class="card-title">Sydney</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <a
+                  href="https://www.sandals.com/?referral=147912"
+                  target="_blank"
+                >
+                  <img
+                    class="materialboxed"
+                    height="200px"
+                    src="img/Gallery/StLucia.jpg"
+                    alt=""
+                  />
+                  <span class="card-title">Caribbean</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  height="200px"
+                  src="img/Gallery/AntelopeCanyon.jpg"
+                  alt=""
+                />
+                <span class="card-title">Antelope Canyon</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  height="200px"
+                  src="img/Gallery/CliffsOfMoher.jpeg"
+                  alt=""
+                />
+                <span class="card-title">Ireland - Cliffs of Moher</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  height="200px"
+                  src="img/Gallery/Kyoto.jpg"
+                  alt=""
+                />
+                <span class="card-title">Kyoto, Japan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Travel Resources -->
+    <section
+      id="resources"
+      class="section section-travel-resources center scrollspy"
+    >
+      <div class="container">
         <h4 class="center">
-        <span class="light-blue-text darken-2">Our</span> Favorite Places</h4>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" src="img/Gallery/Iceland.jpg" height=200px alt="">
-              <span class="card-title">Iceland</span>
+          <span class="light-blue-text darken-2">Essential</span> Travel
+          Resources
+        </h4>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel hoverable">
+              <a
+                target="_blank"
+                class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2"
+                href="https://travel.state.gov/content/travel/en.html"
+                >Passport Resources</a
+              >
+              <p>
+                Go here to get all the information you need before you head
+                overseas.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/Italy.jpeg" alt="">
-              <span class="card-title">Italy</span>
+          <div class="col s12 m4">
+            <div class="card-panel hoverable">
+              <a
+                target="_blank"
+                class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2"
+                href="http://wwwnc.cdc.gov/travel/"
+                >CDC Travel Information</a
+              >
+              <p>
+                Go here to view recommended health precautions and warnings for
+                travelers.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" src="img/Gallery/Cancun.jpg" height=200px alt="">
-              <span class="card-title">Cancun, Mexico</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/EiffelTower.jpg" alt="">
-              <span class="card-title">Paris, France</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" src="img/Gallery/Sydney.jpg" height=200px alt="">
-              <span class="card-title">Sydney</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/StLucia.jpg" alt="">
-              <span class="card-title">St. Lucia</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/AntelopeCanyon.jpg" alt="">
-              <span class="card-title">Antelope Canyon</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/CliffsOfMoher.jpeg" alt="">
-              <span class="card-title">Ireland - Cliffs of Moher</span>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img class="materialboxed" height=200px src="img/Gallery/Kyoto.jpg" alt="">
-              <span class="card-title">Kyoto, Japan</span>
+          <div class="col s12 m4">
+            <div class="card-panel hoverable">
+              <a
+                target="_blank"
+                class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2"
+                href="http://www.xe.com/ucc/"
+                >Currency Converter</a
+              >
+              <p>
+                Go here to perform interactive foreign exchange rate
+                calculations.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section: Travel Resources -->
-  <section id="resources" class="section section-travel-resources center scrollspy">
-    <div class="container">
-      <h4 class="center">
-        <span class="light-blue-text darken-2">Essential</span> Travel Resources
-      </h4>
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel hoverable">
-            <a target="_blank" class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2" href="https://travel.state.gov/content/travel/en.html">Passport Resources</a>
-            <p>Go here to get all the information you need before you head overseas.</p>
+    <!-- Section: Contact -->
+    <section
+      id="contact"
+      class="section section-contact grey lighten-4 scrollspy"
+    >
+      <div class="container">
+        <h4 class="center">
+          <span class="light-blue-text darken-2">Our</span> Contact Information
+        </h4>
+        <div class="row">
+          <div class="col s12 m6">
+            <div
+              class="card-panel light-blue darken-2 white-text center hoverable"
+            >
+              <i class="material-icons">email</i>
+              <h5>Questions? We're here to help.</h5>
+              <p>
+                Click below to fill out our contact form. (Opens in new tab)
+              </p>
+              <a
+                target="_blank"
+                class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-4"
+                href="https://allthingstravel.wufoo.com/forms/z13362ul04609fu/"
+                >Contact Form</a
+              >
+            </div>
+            <ul class="collection with-header hoverable">
+              <li class="collection-header">
+                <h4>All Things Travel</h4>
+              </li>
+              <li class="collection-item">
+                <i class="tiny material-icons">phone</i> 901.779.8952
+              </li>
+              <li class="collection-item">
+                <i class="tiny material-icons">email</i> 1620 Bonnie Lane, Suite
+                104, Cordova, TN, 38016
+              </li>
+              <li class="collection-item">
+                <i class="tiny material-icons">access_time</i> Monday-Friday
+                9am-5pm
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel hoverable">
-            <a target="_blank" class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2" href="http://wwwnc.cdc.gov/travel/">CDC Travel Information</a>
-            <p>Go here to view recommended health precautions and warnings for travelers.</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel hoverable">
-            <a target="_blank" class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-2" href="http://www.xe.com/ucc/">Currency Converter</a>
-            <p>Go here to perform interactive foreign exchange rate calculations.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Contact -->
-  <section id="contact" class="section section-contact grey lighten-4 scrollspy">
-    <div class="container">
-      <h4 class="center">
-        <span class="light-blue-text darken-2">Our</span> Contact Information
-      </h4>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card-panel light-blue darken-2 white-text center hoverable">
-            <i class="material-icons">email</i>
-            <h5>Questions? We're here to help.</h5>
-            <p>Click below to fill out our contact form. (Opens in new tab)</p>
-            <a target="_blank" class="waves-effect waves-light btn-large modal-trigger modal-close light-blue darken-4" href="https://allthingstravel.wufoo.com/forms/z13362ul04609fu/">Contact Form</a>
-          </div>
-          <ul class="collection with-header hoverable">
-            <li class="collection-header">
-              <h4>All Things Travel</h4>
-            </li>
-            <li class="collection-item"><i class="tiny material-icons">phone</i> 901.779.8952</li>
-            <li class="collection-item"><i class="tiny material-icons">email</i> 1620 Bonnie Lane, Suite 104, Cordova, TN, 38016</li>
-            <li class="collection-item"><i class="tiny material-icons">access_time</i> Monday-Friday 9am-5pm</li>
-          </ul>
-        </div>
-        <div class="col s12 m6">
-          <div class="card-panel hoverable">
-            <div class="video-container">
-              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4798451983975!2d-89.79251458443923!3d35.16959106546792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f9c34bc8b8ad3%3A0x178f42b007b7706c!2s1620+Bonnie+Ln%2C+Cordova%2C+TN+38016!5e0!3m2!1sen!2sus!4v1486740816987" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="col s12 m6">
+            <div class="card-panel hoverable">
+              <div class="video-container">
+                <iframe
+                  id="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4798451983975!2d-89.79251458443923!3d35.16959106546792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f9c34bc8b8ad3%3A0x178f42b007b7706c!2s1620+Bonnie+Ln%2C+Cordova%2C+TN+38016!5e0!3m2!1sen!2sus!4v1486740816987"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Facebook Embedded Posts -->
-  <section id="fb-posts" class="section section-fb-posts center scrollspy">
-    <div class="container">
-      <h4 class="center">
-        <span class="light-blue-text darken-2">Our</span> Recent Posts
-      </h4>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <div class="fb-page" data-href="https://www.facebook.com/allthingstravel.biz/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/allthingstravel.biz/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/allthingstravel.biz/">All Things Travel</a></blockquote></div>
         </div>
       </div>
-      
-    </div>
-  </section>
-      
-  <!-- Footer -->
-  <footer class="section light-blue darken-2 white-text center">
-    <p>1620 Bonnie Lane, Suite 104, Cordova, TN, 38016</p>
-    <p class="flow-text">All Things Travel &copy; 2024 </p>
-  </footer>
+    </section>
 
-  <!--JavaScript at end of body for optimized loading-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Facebook Embedded Posts -->
+    <section id="fb-posts" class="section section-fb-posts center scrollspy">
+      <div class="container">
+        <h4 class="center">
+          <span class="light-blue-text darken-2">Our</span> Recent Posts
+        </h4>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/allthingstravel.biz/"
+              data-tabs="timeline"
+              data-width="500"
+              data-height=""
+              data-small-header="false"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true"
+            >
+              <blockquote
+                cite="https://www.facebook.com/allthingstravel.biz/"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/allthingstravel.biz/"
+                  >All Things Travel</a
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    // Sidenav
-    const sideNav = document.querySelector('.sidenav');
-    M.Sidenav.init(sideNav, {});
+    <!-- Footer -->
+    <footer class="section light-blue darken-2 white-text center">
+      <p>1620 Bonnie Lane, Suite 104, Cordova, TN, 38016</p>
+      <p class="flow-text">All Things Travel &copy; 2024</p>
+    </footer>
 
-    // Slider
-    const slider = document.querySelector('.slider');
-    M.Slider.init(slider, {
-      indicators: false,
-      height: 500,
-      transition: 500,
-      interval: 6000
-    });
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    // ScrollSpy
-    const ss = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(ss, {});
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sidenav
+        const sideNav = document.querySelector(".sidenav");
+        M.Sidenav.init(sideNav, {});
 
-    // Collapsible & Modal
-    document.addEventListener('DOMContentLoaded', function() {
-      var collapsibleElems = document.querySelectorAll('.collapsible');
-      var collapsibleInstances = M.Collapsible.init(collapsibleElems, {});
-      var modalElems = document.querySelectorAll('.modal');
-      var modalInstances = M.Modal.init(modalElems, {});
-      var materialBoxElems = document.querySelectorAll('.materialboxed');
-      var materialBoxInstances = M.Materialbox.init(materialBoxElems, {});
-    });
-  </script>
-</body>
+        // Slider
+        const slider = document.querySelector(".slider");
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 6000,
+        });
 
+        // ScrollSpy
+        const ss = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(ss, {});
+
+        // Collapsible & Modal
+        var collapsibleElems = document.querySelectorAll(".collapsible");
+        var collapsibleInstances = M.Collapsible.init(collapsibleElems, {});
+        var modalElems = document.querySelectorAll(".modal");
+        var modalInstances = M.Modal.init(modalElems, {});
+        var materialBoxElems = document.querySelectorAll(".materialboxed");
+        var materialBoxInstances = M.Materialbox.init(materialBoxElems, {});
+
+        // Dropdown
+        var dropdowns = document.querySelectorAll(".dropdown-trigger");
+        var dropdownOptions = {
+          coverTrigger: false,
+          constrainWidth: false,
+        };
+        M.Dropdown.init(dropdowns, dropdownOptions);
+      });
+    </script>
+  </body>
 </html>
