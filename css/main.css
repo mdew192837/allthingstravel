@@ -1,3 +1,19 @@
+.navbar-fixed nav .nav-wrapper {
+  padding: 0 20px;
+}
+
+/* Materialize's own fix for a centered brand-logo overlapping nav links
+   is the .brand-logo.left class (see materializecss.com/navbar.html).
+   Applied only at desktop widths, since it collides with the mobile
+   sidenav-trigger icon (Materialize warns you must manage that yourself). */
+@media only screen and (min-width: 993px) {
+  .navbar-fixed nav .nav-wrapper .brand-logo {
+    left: 0.5rem;
+    transform: none;
+    font-size: 1.6rem;
+  }
+}
+
 .section-search input {
   padding: 5px !important;
   font-size: 18px !important;
